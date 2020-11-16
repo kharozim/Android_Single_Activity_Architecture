@@ -6,17 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:text="FRAGMENT MAIN"
-        android:textSize="30sp" />
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:gravity="center"-->
+<!--        android:text="FRAGMENT MAIN"-->
+<!--        android:textSize="30sp" />-->
 
     <fragment
         android:id="@+id/fragment_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
+        app:navGraph ="@navigation/nav_graph"
+        app:defaultNavHost = "true"
         android:layout_height="match_parent" />
 
 </RelativeLayout>
