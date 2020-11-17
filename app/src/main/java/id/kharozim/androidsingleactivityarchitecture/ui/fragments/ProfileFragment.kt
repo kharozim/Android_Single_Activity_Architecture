@@ -14,7 +14,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentProfileBinding.inflate(layoutInflater, container, false).apply {
+        binding = FragmentProfileBinding.inflate(inflater, container, false).apply {
 
 
 

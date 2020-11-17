@@ -18,7 +18,7 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
+        binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
     }
     
@@ -26,7 +26,7 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btLogin.setOnClickListener {
-            it.findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+            it.findNavController().navigate(R.id.action_loginFragment_to_homeFragmentMain)
         }
         binding.btRegister.setOnClickListener {
             it.findNavController().navigate(R.id.action_loginFragment_to_registerFragment)

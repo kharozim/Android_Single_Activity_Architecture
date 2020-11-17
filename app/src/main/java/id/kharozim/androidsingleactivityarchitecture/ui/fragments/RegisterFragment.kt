@@ -16,7 +16,7 @@ class RegisterFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentRegisterBinding.inflate(layoutInflater, container, false).apply {
+        binding = FragmentRegisterBinding.inflate(inflater, container, false).apply {
 
             btRegister.setOnClickListener {
                 it.findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
